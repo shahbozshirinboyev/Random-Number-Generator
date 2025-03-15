@@ -21,6 +21,16 @@
   </head>
 
   <body>
+
+    <div class="toast align-items-center text-bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body">
+          Hello, world! This is a toast message.
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+
     <div
       class="d-flex justify-content-center align-items-center vh-100 p-2 p-md-4"
     >
@@ -57,10 +67,10 @@
 
           <div class="col-12 col-md-7 border rounded-3 p-4">
             <div class="text-center pb-5 bold">
-              <span class="text-muted fw-bolder fs-3"> # </span>
+              <span id="result" class="text-muted fw-bolder fs-1"> # </span>
             </div>
 
-            <form action>
+            <div>
               <div class="row">
                 <div class="col-6">
                   <label for class="input-group">
@@ -79,12 +89,12 @@
                 <div
                   class="col d-flex justify-content-center align-items-center"
                 >
-                  <button class="btn btn-warning w-100 fw-bolder text-muted">
+                  <button id="generate-btn" class="btn btn-warning w-100 fw-bolder text-muted">
                     Generate
                   </button>
                 </div>
               </div>
-            </form>
+            </div>
           </div>
         </div>
       </div>
