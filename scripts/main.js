@@ -6,15 +6,23 @@ const generateRandomNumber = () => {
   const minEl = document.getElementById("min");
   const maxEl = document.getElementById("max");
 
-  if( minEl.value === '' || maxEl.value === '' ){
-    console.log("inputlar bo'sh")
+  if (minEl.value === "" || maxEl.value === "") {
+    const toastLiveExample = document.getElementById("empetyNumbers");
+    const toastBootstrap =
+      bootstrap.Toast.getOrCreateInstance(toastLiveExample);
+    toastBootstrap.show();
+    return;
   }
 
   const min = Number(minEl.value);
   const max = Number(maxEl.value);
 
-  if( min > max ) {
-    console.log("sonlarni to'g'ri kiriting")
+  if (min > max) {
+    const toastLiveExample = document.getElementById("errorNumbers");
+    const toastBootstrap =
+      bootstrap.Toast.getOrCreateInstance(toastLiveExample);
+    toastBootstrap.show();
+    return;
   }
 
   const resultDisplay = document.getElementById("result");

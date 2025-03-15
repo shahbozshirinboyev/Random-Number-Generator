@@ -21,13 +21,20 @@
   </head>
 
   <body>
-
-    <div class="toast align-items-center text-bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
+    <div
+      class="toast align-items-center text-bg-primary border-0"
+      role="alert"
+      aria-live="assertive"
+      aria-atomic="true"
+    >
       <div class="d-flex">
-        <div class="toast-body">
-          Hello, world! This is a toast message.
-        </div>
-        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        <div class="toast-body">Hello, world! This is a toast message.</div>
+        <button
+          type="button"
+          class="btn-close btn-close-white me-2 m-auto"
+          data-bs-dismiss="toast"
+          aria-label="Close"
+        ></button>
       </div>
     </div>
 
@@ -89,13 +96,54 @@
                 <div
                   class="col d-flex justify-content-center align-items-center"
                 >
-                  <button id="generate-btn" class="btn btn-warning w-100 fw-bolder text-muted">
+                  <button
+                    id="generate-btn"
+                    class="btn btn-warning w-100 fw-bolder text-muted"
+                  >
                     Generate
                   </button>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="toast-container position-fixed top-0 p-3">
+      <div
+        id="empetyNumbers"
+        class="toast align-items-center text-bg-primary border-0"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="d-flex">
+          <div class="toast-body">Iltimos, sonlarni kiriting!</div>
+          <button
+            type="button"
+            class="btn-close btn-close-white me-2 m-auto"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+      </div>
+
+      <div
+        id="errorNumbers"
+        class="toast align-items-center text-bg-danger border-0"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="d-flex">
+          <div class="toast-body">Sonlar noto'g'ri kiritilgan!</div>
+          <button
+            type="button"
+            class="btn-close btn-close-white me-2 m-auto"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
         </div>
       </div>
     </div>
